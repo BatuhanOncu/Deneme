@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0b1020" />
+    <meta name="description" content="Elektrik-elektronik, gömülü sistemler ve teknoloji projelerini paylaşmak için kişisel portföy sitesi." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ad Soyad | Mühendislik Portföyü" />
+    <meta property="og:description" content="Fikirden çalışan sisteme: projeler, yetkinlikler ve iletişim." />
+    <meta property="og:image" content="assets/social-preview.svg" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ad Soyad | Mühendislik Portföyü</title>
+    <script>
+      // FOUC önleme: kayıtlı tema tercihini sayfa çizilmeden uygula.
+      try {
+        const saved = localStorage.getItem('portfolio-theme');
+        document.documentElement.dataset.theme = saved === 'light' ? 'light' : 'dark';
+      } catch (_) { document.documentElement.dataset.theme = 'dark'; }
+    </script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">İçeriğe geç</a>
+    <div class="site-shell">
+      <header class="site-header" id="top">
+        <div class="container navbar">
+          <a class="brand" href="#top" aria-label="Ana sayfaya dön">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span>AD<span class="brand-accent">.</span>SOYAD</span>
+          </a>
+          <nav class="nav-links" id="site-nav" aria-label="Ana menü">
+            <a href="#hakkimda">Hakkımda</a>
+            <a href="#projeler">Projeler</a>
+            <a href="#yetkinlikler">Yetkinlikler</a>
+            <a href="#iletisim">İletişim</a>
+          </nav>
+          <div class="nav-actions">
+            <button class="icon-button theme-button" id="theme-toggle" type="button" aria-label="Açık temaya geç" title="Temayı değiştir">
+              <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.1A8.5 8.5 0 0 1 9.9 3.5 8.5 8.5 0 1 0 20.5 14.1Z" /></svg>
+              <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+            </button>
+            <button class="icon-button menu-button" id="menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="site-nav">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="hero container" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="status-dot"></span> MÜHENDİSLİK · TASARIM · TEKNOLOJİ</div>
+            <p class="hero-intro">Merhaba, ben <span>Ad Soyad</span> <span class="wave" aria-hidden="true">✳</span></p>
+            <h1 id="hero-title">Fikirleri <span class="text-gradient">çalışan</span><br />sistemlere dönüştürüyorum.</h1>
+            <p class="hero-description">Elektrik-elektronik mühendisliği, gömülü sistemler ve donanım geliştirme üzerine çalışıyorum. Tasarladığım sistemleri, öğrendiklerimi ve yeni fikirlerimi burada paylaşıyorum.</p>
+            <div class="hero-buttons">
+              <a class="button button-primary" href="#projeler">Projelerimi incele <span aria-hidden="true">↗</span></a>
+              <a class="button button-secondary" href="#iletisim">Benimle iletişime geç <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="hero-micro"><span class="micro-icon" aria-hidden="true">✦</span> Merakla üret, ölçerek geliştir.</div>
+          </div>
+          <div class="hero-visual" aria-label="Elektronik sistem ve kod tasarımı temalı dekoratif görsel">
+            <div class="halo halo-one"></div><div class="halo halo-two"></div>
+            <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div>
+            <div class="floating-tag tag-top"><span class="tag-led"></span> SYSTEM ONLINE</div>
+            <div class="dashboard-card">
+              <div class="window-topbar"><div class="dots"><i></i><i></i><i></i></div><span>project_overview.sys</span><span class="window-plus">⌘</span></div>
+              <div class="dashboard-body">
+                <div class="diagram-header"><span>01 / SYSTEM DESIGN</span><span class="diagram-live">● ACTIVE</span></div>
+                <svg class="circuit-diagram" viewBox="0 0 440 240" role="img" aria-label="Mikrodenetleyiciden sensör ve motor kontrol birimlerine uzanan bağlantı şeması">
+                  <defs><linearGradient id="wireGradient" x1="0" x2="1"><stop stop-color="#5b7cff"/><stop offset="1" stop-color="#31d6c7"/></linearGradient></defs>
+                  <path class="wire-path" d="M170 119H214V52H264M214 119H264M214 119V186H264" fill="none" stroke="url(#wireGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M67 119H80" stroke="#6b83c6" stroke-width="2" stroke-dasharray="4 5" />
+                  <rect x="26" y="87" width="144" height="64" rx="12" fill="#1d2d50" stroke="#6a82ce" stroke-width="1.3" />
+                  <rect x="37" y="99" width="26" height="26" rx="6" fill="#5578fd" opacity=".25" stroke="#6d91ff"/><path d="M45 112h10m-5-5v10" stroke="#91acff" stroke-width="2" stroke-linecap="round"/>
+                  <text x="73" y="113" fill="#f5f7ff" font-size="12" font-family="monospace" font-weight="700">MCU / CPU</text><text x="73" y="132" fill="#9dadcc" font-size="10" font-family="monospace">CONTROL CORE</text>
+                  <g><rect x="264" y="23" width="152" height="58" rx="10" fill="#142a3e" stroke="#31baa9" stroke-width="1.2"/><circle cx="285" cy="52" r="7" fill="#31d6c7" opacity=".2" stroke="#31d6c7"/><text x="302" y="49" fill="#f5f7ff" font-size="12" font-family="monospace" font-weight="700">SENSOR</text><text x="302" y="64" fill="#91a9ba" font-size="9" font-family="monospace">DATA INPUT</text></g>
+                  <g><rect x="264" y="90" width="152" height="58" rx="10" fill="#222442" stroke="#8679ed" stroke-width="1.2"/><circle cx="285" cy="119" r="7" fill="#a58aff" opacity=".2" stroke="#a58aff"/><text x="302" y="116" fill="#f5f7ff" font-size="12" font-family="monospace" font-weight="700">DRIVER</text><text x="302" y="131" fill="#a6a0c5" font-size="9" font-family="monospace">MOTOR CTRL</text></g>
+                  <g><rect x="264" y="157" width="152" height="58" rx="10" fill="#1a2a3f" stroke="#50aee8" stroke-width="1.2"/><circle cx="285" cy="186" r="7" fill="#5dbfff" opacity=".2" stroke="#5dbfff"/><text x="302" y="183" fill="#f5f7ff" font-size="12" font-family="monospace" font-weight="700">COMMS</text><text x="302" y="198" fill="#93aac5" font-size="9" font-family="monospace">CAN / UART</text></g>
+                  <circle class="pulse-node" cx="214" cy="119" r="5" fill="#80a2ff"/>
+                  <circle cx="214" cy="52" r="4" fill="#31d6c7"/><circle cx="214" cy="186" r="4" fill="#5dbfff" />
+                </svg>
+                <div class="dashboard-bottom"><div><span class="stat-label">SYSTEM STATUS</span><strong><span class="status-dot small"></span> READY</strong></div><div><span class="stat-label">BUILD PROCESS</span><strong>IDEA → PROTOTYPE</strong></div></div>
+              </div>
+            </div>
+            <div class="floating-tag tag-bottom"><span aria-hidden="true">◈</span> HARDWARE + SOFTWARE</div>
+          </div>
+        </section>
+
+        <section class="section about-section" id="hakkimda" aria-labelledby="about-title">
+          <div class="container about-grid">
+            <div><p class="section-kicker">/ 01 — HAKKIMDA</p><h2 class="section-title" id="about-title">Sadece devre değil,<br /><span class="muted-title">çözüm tasarlıyorum.</span></h2></div>
+            <div class="about-copy"><p>Benim için mühendislik; bir problemi anlamak, farklı disiplinleri bir araya getirmek ve güvenilir bir çözüm geliştirmek demek. Donanım ile yazılımın kesiştiği projeler özellikle ilgimi çekiyor.</p><p>Bu portföyde üzerinde çalıştığım örnek alanları, teknik yetkinliklerimi ve iletişim bilgilerimi bulabilirsin.</p><a class="text-link" href="#yetkinlikler">Kullandığım teknolojileri gör <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </section>
+
+        <section class="section project-section" id="projeler" aria-labelledby="projects-title">
+          <div class="container">
+            <div class="section-heading"><div><p class="section-kicker">/ 02 — SEÇİLİ PROJELER</p><h2 class="section-title" id="projects-title">Üzerinde çalıştığım <span class="muted-title">alanlar.</span></h2><p class="section-subtitle">Aşağıdaki kartlar örnek içeriktir. Kendi projelerinle kolayca değiştirebilirsin.</p></div><span class="section-count">[ 03 PROJECTS ]</span></div>
+            <div class="filters" role="group" aria-label="Projeleri filtrele">
+              <button type="button" class="filter active" data-filter="all" aria-pressed="true">Tümü <span>03</span></button>
+              <button type="button" class="filter" data-filter="hardware" aria-pressed="false">Donanım</button>
+              <button type="button" class="filter" data-filter="software" aria-pressed="false">Yazılım</button>
+              <button type="button" class="filter" data-filter="system" aria-pressed="false">Sistem</button>
+            </div>
+            <div class="project-grid">
+              <article class="project-card" data-category="hardware system">
+                <div class="project-art motor-art" aria-hidden="true"><span class="project-art-label">HARDWARE / 001</span><div class="chip-board"><div class="board-lines"></div><div class="big-chip"><span>DRV</span><small>MOTOR</small></div><div class="pin p1"></div><div class="pin p2"></div><div class="pin p3"></div><div class="pin p4"></div></div><div class="art-corner">↗</div></div>
+                <div class="project-details"><div class="project-meta"><span>01</span><span>ÖRNEK PROJE</span></div><h3>Motor Sürücü Tasarımı</h3><p>Motor kontrolü için güç elektroniği, koruma devreleri ve PCB tasarım süreçleri.</p><div class="tech-list"><span>PCB</span><span>MOSFET</span><span>PWM</span></div></div>
+              </article>
+              <article class="project-card" data-category="software system">
+                <div class="project-art software-art" aria-hidden="true"><span class="project-art-label">SOFTWARE / 002</span><div class="code-stack"><span><em>01</em><b class="code-pink">void</b> control_loop() {</span><span><em>02</em> &nbsp;<b class="code-blue">read</b>(sensors);</span><span><em>03</em> &nbsp;<b class="code-blue">update</b>(state);</span><span><em>04</em> &nbsp;<b class="code-green">set_pwm</b>(duty);</span><span><em>05</em> }</span></div><div class="art-corner">↗</div></div>
+                <div class="project-details"><div class="project-meta"><span>02</span><span>ÖRNEK PROJE</span></div><h3>Gömülü Kontrol Yazılımı</h3><p>Gerçek zamanlı kontrol algoritmaları, sensör okuma ve haberleşme altyapısı.</p><div class="tech-list"><span>Embedded C</span><span>MCU</span><span>CAN</span></div></div>
+              </article>
+              <article class="project-card" data-category="system hardware">
+                <div class="project-art battery-art" aria-hidden="true"><span class="project-art-label">SYSTEMS / 003</span><div class="battery-shell"><div class="battery-tip"></div><div class="battery-bars"><i></i><i></i><i></i><i></i></div><span class="battery-text">82<span>%</span></span></div><div class="battery-spark">⌁</div><div class="art-corner">↗</div></div>
+                <div class="project-details"><div class="project-meta"><span>03</span><span>ÖRNEK PROJE</span></div><h3>Batarya Yönetim Sistemi</h3><p>Hücre izleme, güvenlik, ölçüm ve sistem mimarisi için mühendislik yaklaşımları.</p><div class="tech-list"><span>BMS</span><span>SoC</span><span>Safety</span></div></div>
+              </article>
+            </div>
+            <p id="filter-empty" class="filter-empty" hidden>Bu kategoride henüz proje yok.</p>
+          </div>
+        </section>
+
+        <section class="section skills-section" id="yetkinlikler" aria-labelledby="skills-title">
+          <div class="container skills-grid"><div><p class="section-kicker">/ 03 — YETKİNLİKLER</p><h2 class="section-title" id="skills-title">Disiplinler arası<br /><span class="muted-title">bir yaklaşım.</span></h2><p class="section-subtitle">Aşağıdaki başlıkları kendi deneyimlerine ve kullandığın araçlara göre güncelleyebilirsin.</p></div>
+            <div class="skills-list"><div class="skill-row"><div class="skill-icon">⌘</div><div><h3>Elektronik & PCB</h3><p>Şematik tasarım, PCB yerleşimi, test ve hata ayıklama</p></div><span class="skill-arrow">↗</span></div><div class="skill-row"><div class="skill-icon">{ }</div><div><h3>Gömülü Yazılım</h3><p>Mikrodenetleyiciler, C/C++, seri haberleşme protokolleri</p></div><span class="skill-arrow">↗</span></div><div class="skill-row"><div class="skill-icon">◌</div><div><h3>Modelleme & Kontrol</h3><p>MATLAB / Simulink, sistem analizi, algoritma geliştirme</p></div><span class="skill-arrow">↗</span></div><div class="skill-row"><div class="skill-icon">◈</div><div><h3>Sistem Mühendisliği</h3><p>Gereksinimler, doğrulama, entegrasyon ve dokümantasyon</p></div><span class="skill-arrow">↗</span></div></div>
+          </div>
+        </section>
+
+        <section class="contact-section" id="iletisim" aria-labelledby="contact-title">
+          <div class="container contact-inner"><div class="contact-stars" aria-hidden="true">✳</div><p class="section-kicker">/ 04 — İLETİŞİM</p><h2 id="contact-title">Birlikte bir şeyler<br /><span class="text-gradient">üretelim mi?</span></h2><p>Bir proje fikrin, sorunun veya iş birliği önerin varsa konuşalım.</p><a class="button button-primary contact-cta" href="mailto:merhaba@example.com">E-posta gönder <span aria-hidden="true">↗</span></a><div class="contact-note">Yayınlamadan önce örnek e-posta adresini kendi adresinle değiştir.</div></div>
+        </section>
+      </main>
+      <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#top">AD<span>.</span>SOYAD</a><span>© <span id="year">2026</span> · Tasarla. Üret. Geliştir.</span><a href="#top" class="back-to-top">Yukarı dön ↑</a></div></footer>
+    </div>
+  </body>
+</html>
